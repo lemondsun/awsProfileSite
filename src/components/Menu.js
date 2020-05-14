@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 export default function Menu() {
   return (
     <div id='menu-bar'>
-      <h1>techStack</h1>
-      <h1>projects</h1>
-      <h1>contact</h1>
-      <h1>resume</h1>
+      <Link to="/techstack"><h1 class='menu-item'><span class='method'>.techStack</span><span class="parenthesis">( )</span></h1></Link>
+      <Link to='/projects'><h1 class='menu-item'><span class='method'>.projects</span><span class="parenthesis">( )</span></h1></Link>
+      <Link to='/contact'><h1 class='menu-item'><span class='method'>.contact</span><span class="parenthesis">( )</span></h1></Link>
+      <Link to='resume'><h1 class='menu-item'><span class='method'>.resume</span><span class="parenthesis">( )</span></h1></Link>
     </div>
   )
 }

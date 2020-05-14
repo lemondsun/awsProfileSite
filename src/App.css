@@ -1,3 +1,7 @@
+.App {
+position: relative;
+}
+
 #home-page-div {
   background-color: rgb(9, 0, 85);
   font-family: RoboMono-Regular;
@@ -35,4 +39,39 @@
 
 .parenthesis {
   color: rgb(255, 255, 0);
+}
+
+/* ------------------ menu - bar -------------- */
+
+#menu-bar {
+display: flex;
+flex-direction: row;
+font-size: 1.5em;
+margin: 15vh 10vw;
+position: absolute;
+bottom: 3vh
+}
+
+.menu-item {
+margin: 0vh 2vw
+}
+
+#menu-bar a {
+  text-decoration: none;
+}
+
+#menu-bar a:hover  {
+  text-shadow: 3px 3px rgb(13, 94, 243);
+}
+
+/* --- tech stack page --- */
+
+.parallax {
+  background-image: url("https://c0.wallpaperflare.com/preview/69/379/800/business-laptop-office-computer.jpg");
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
