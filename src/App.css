@@ -75,3 +75,97 @@ margin: 0vh 2vw
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#about-me-div {
+  background-color: rgb(9, 0, 85);
+  font-family: RoboMono-Regular;
+  padding: 5vh 0vw;
+}
+
+.commented-title {
+  margin: 0vh 40vw 5vh;
+  color: rgb(9, 71, 188);
+}
+
+#brand-statement {
+  margin: 0vh 5vw;
+  color: white;
+}
+
+#tech-stack-div {
+  background-color: rgb(9, 0, 85);
+  font-family: RoboMono-Regular;
+  padding: 5vh 0vw;
+}
+
+#languages-images-box {
+  margin-left: 15vw;
+}
+
+.languages-images {
+  width: 10vw;
+  height: 15vh;
+  margin: 0px 2px 0px 2px;
+}
+
+#bottom-div {
+  height: 10vh;
+  background-color: rgb(9, 0, 85);}
+
+.argument {
+  color: rgb(0, 89, 255);
+}
+
+.to-top-button {
+  position: relative;
+  left: 70vw;
+  margin: 0px;
+}
+
+/* ------- projects page -------- */
+
+#projects-div {
+  background-color: rgb(9, 0, 85);
+  font-family: RoboMono-Regular;
+  padding: 5vh 0vw;
+}
+
+.project-area {
+  margin: 0vw 2.5vw 0vw 2.5vw;
+}
+
+.projects-titles {
+  color: #7987a1;
+  font-family: "Cabin", sans-serif;
+  margin-top: 50px;
+}
+
+.projects-titles:hover {
+  color: #0f3742;
+}
+
+#project-row {
+  display: flex;
+  /* padding: 0vw 10vw 0vw 10vw; */
+}
+
+.project-images {
+  height: 25vh;
+}
+
+.project-languages-images {
+  width: 5vw;
+  height: 10vh;
+  display: inline;
+}
+
+.github-link {
+  height: 8vh;
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
