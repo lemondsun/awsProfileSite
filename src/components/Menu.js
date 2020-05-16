@@ -1,13 +1,34 @@
-import React from 'react'
+import React, { useEffect }from 'react'
 import { Link} from 'react-router-dom'
 
-export default function Menu() {
+export default function Menu(props) {
+  const [page] = React.useState(props)
+  const [menuLocation, setMenu] = React.useState('menu-bar')
+
+  let shiftMenuBar = (page) => {
+    if (page !== 'home') {
+    setMenu('top-menu')
+    }
+  }
+  let menuItems = ['techstack', 'projects', 'contact']
+  useEffect(() => {
+    shiftMenuBar(page.page)
+  })
+  
   return (
-    <div id='menu-bar'>
-      <Link to="/techstack"><h1 class='menu-item'><span class='method'>.techStack</span><span class="parenthesis">( )</span></h1></Link>
-      <Link to='/projects'><h1 class='menu-item'><span class='method'>.projects</span><span class="parenthesis">( )</span></h1></Link>
-      <Link to='/contact'><h1 class='menu-item'><span class='method'>.contact</span><span class="parenthesis">( )</span></h1></Link>
-      <a href='https://docdro.id/UVBCUo8' target="_blank" ><h1 class='menu-item'><span class='method'>.resume</span><span class="parenthesis">( )</span></h1></a>
-    </div>
+    
+    <div id={menuLocation}>
+      {
+        menuItems.map(item => (
+          item === page.page? 
+          <Link to='/'><h1 class='menu-item'><span class='method'>.home</span><span class="parenthesis">( )</span></h1></Link>
+            :
+            <Link to={`/${item}`}><h1 class='menu-item'><span class='method'>{`.${item}`}</span><span class="parenthesis">( )</span></h1></Link>
+
+        ))
+      }
+      <a href='https://docdro.id/UVBCUo8' target="_blank"  rel="noopener"><h1 class='menu-item'><span class='method'>.resume</span><span class="parenthesis">( )</span></h1></a>
+      </div>
+      
   )
 }

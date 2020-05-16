@@ -43,13 +43,30 @@ position: relative;
 
 /* ------------------ menu - bar -------------- */
 
+#top-menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  margin: 15vh 12vw;
+  position: absolute;
+  top: -95px;
+}
+
+#top-menu a {
+  text-decoration: none;
+}
+
+#top-menu a:hover  {
+  text-shadow: 3px 3px rgb(13, 94, 243);
+}
+
 #menu-bar {
 display: flex;
 flex-direction: row;
 font-size: 1.5em;
 margin: 15vh 10vw;
 position: absolute;
-bottom: 3vh
+bottom: 10vh
 }
 
 .menu-item {
@@ -66,6 +83,19 @@ margin: 0vh 2vw
 
 /* --- tech stack page --- */
 
+#top {
+  scroll-behavior: smooth;
+ overflow: hidden;
+}
+
+#top a {
+  text-decoration: none;
+}
+
+#top a:hover {
+  text-shadow: 2px 2px aliceblue;
+}
+
 .parallax {
   background-image: url("https://c0.wallpaperflare.com/preview/69/379/800/business-laptop-office-computer.jpg");
   height: 400px;
@@ -79,7 +109,7 @@ margin: 0vh 2vw
 #about-me-div {
   background-color: rgb(9, 0, 85);
   font-family: RoboMono-Regular;
-  padding: 5vh 0vw;
+  padding: 20vh 0vw 10vh;
 }
 
 .commented-title {
@@ -120,6 +150,13 @@ margin: 0vh 2vw
   position: relative;
   left: 70vw;
   margin: 0px;
+  animation:
+  blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 /* ------- projects page -------- */
@@ -127,21 +164,26 @@ margin: 0vh 2vw
 #projects-div {
   background-color: rgb(9, 0, 85);
   font-family: RoboMono-Regular;
-  padding: 5vh 0vw;
+  padding: 20vh 0vw 10vh;
 }
 
 .project-area {
   margin: 0vw 2.5vw 0vw 2.5vw;
 }
 
+.project-area a {
+  text-decoration: none;
+}
+
 .projects-titles {
-  color: #7987a1;
+  color: white;
   font-family: "Cabin", sans-serif;
   margin-top: 50px;
+  text-align: center;
 }
 
 .projects-titles:hover {
-  color: #0f3742;
+  color: rgb(0, 89, 255);
 }
 
 #project-row {
@@ -151,21 +193,82 @@ margin: 0vh 2vw
 
 .project-images {
   height: 25vh;
+  margin-left: 5vw;
 }
 
 .project-languages-images {
   width: 5vw;
   height: 10vh;
-  display: inline;
+  margin-left: 2.5vw;
+}
+
+.project-description {
+  color: white;
 }
 
 .github-link {
   height: 8vh;
   animation: blinker 2s linear infinite;
+  margin-left: 12vw;
 }
 
 @keyframes blinker {
   50% {
     opacity: 0;
   }
+}
+
+/* ----- contact me page ------ */
+
+#contact-page {
+  background-color: rgb(9, 0, 85);
+  font-family: RoboMono-Regular;
+  padding: 20vh 0vw 10vh;
+  height: 100vh;
+}
+
+#contact-form-area {
+  background-color: white;
+  height:40vh;
+  width: 40vw;
+  margin: 0vh 30vw;
+  text-align: center;
+  border: 5px solid rgb(0, 89, 255);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 30vw;
+  margin: 2vh 5vw;
+  border: 2px solid black;
+
+}
+
+#contact-form-button {
+  width: 10vw;
+  margin: 2vh 15vw;
+  border: 2px solid black;
+}
+
+.message-area {
+  width: 30vw;
+  margin-left: 5vw;
+}
+
+/* -------- Footer -------- */
+
+#footer {
+  background-color: black;
+  color: white;
+  font-family: RoboMono-Regular;
+  text-align: center;
+
+}
+
+#footer h1 {
+margin: 0;
 }

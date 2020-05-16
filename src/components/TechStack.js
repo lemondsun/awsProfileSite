@@ -2,10 +2,11 @@ import React from 'react'
 import Menu from '../components/Menu'
 
 export default function () {
+  const [page] = React.useState('techstack')
   return (
-    
     <div>
-      <Menu/>
+      <Menu page={page}/>
+    <div id='top'>
       <div id='about-me-div'>
         <h1 class='commented-title'>//About Me</h1>
         <p id="brand-statement">
@@ -67,7 +68,10 @@ export default function () {
       </div>
       <div className="parallax"></div>
       <div id='bottom-div'>
+        <a href='#top'>
       <h1 class='to-top-button'><span class='method'>.return</span><span class='parenthesis'>(<span class='argument'>toTop</span>)</span></h1>
+      </a>
+      </div>
       </div>
       </div>
      

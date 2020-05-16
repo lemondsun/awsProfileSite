@@ -2,6 +2,7 @@ import React from 'react'
 import Menu from '../components/Menu'
 
 export default function HomePage() {
+  const [page] = React.useState('home')
   return (
     <div>
     <div id="home-page-div">
@@ -16,7 +17,7 @@ export default function HomePage() {
        
       </div>
       </div>
-      <Menu/>
+      <Menu page={page}/>
       </div>
   )
 }
