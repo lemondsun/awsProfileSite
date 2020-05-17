@@ -4,7 +4,7 @@ import Menu from '../components/Menu'
 export default function () {
   const [page] = React.useState('techstack')
   return (
-    <div>
+    <div id='tech-stack-page'>
       <Menu page={page}/>
     <div id='top'>
       <div id='about-me-div'>

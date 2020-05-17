@@ -4,7 +4,7 @@ import Menu from '../components/Menu'
 export default function HomePage() {
   const [page] = React.useState('home')
   return (
-    <div>
+    <div id='entire-home-page'>
     <div id="home-page-div">
       <div id='titled-header'>
       <h1 id="const-title">const</h1>

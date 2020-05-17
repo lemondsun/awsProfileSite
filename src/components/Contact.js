@@ -4,7 +4,7 @@ import Menu from '../components/Menu'
 export default function Contact() {
   const [page] = React.useState('contact')
   return (
-    <div>
+    <div class='entire-page'>
     <Menu page={page}/>
     <div id='contact-page'>
       

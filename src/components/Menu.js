@@ -27,7 +27,7 @@ export default function Menu(props) {
 
         ))
       }
-      <a href='https://docdro.id/UVBCUo8' target="_blank"  rel="noopener"><h1 class='menu-item'><span class='method'>.resume</span><span class="parenthesis">( )</span></h1></a>
+      <a href='https://www.docdroid.net/4KJO5md/jason-mullings-resume-pdf' target="_blank"  rel="noopener"><h1 class='menu-item'><span class='method'>.resume</span><span class="parenthesis">( )</span></h1></a>
       </div>
       
   )
