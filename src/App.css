@@ -272,3 +272,189 @@ margin: 0vh 2vw
 #footer h1 {
 margin: 0;
 }
+
+@media only screen and (max-width: 414px) {
+  
+  /* ----- home page ------ */
+
+  .App {
+    position: relative;
+    height: 736px;
+    }
+
+  #home-page-div {
+    background-color: rgb(9, 0, 85);
+    font-family: RoboMono-Regular;
+    height: 505px;
+    /* height: 100vh;
+    width: 100vw; */
+    padding-top: 20vh;
+  }
+
+  #titled-header {
+    margin-left: 15vw;
+    font-size: 1em;
+  }
+  
+  #const-title {
+    color: rgb(122, 0, 179);
+    margin: 0px;
+  }
+  
+  #name-title {
+    color: rgb(255, 255, 0);
+    margin: 0vh 0vw 0vh 5vw;
+    font-size: 3.2em;
+  }
+  
+  #programmer-title{
+    margin: 0vh 0vw 0vh 17vw;
+  }
+  
+  #new{
+    color: rgb(9, 71, 188);
+  }
+  
+  .method{
+    color:rgb(122, 0, 179);
+  }
+  
+  .parenthesis {
+    color: rgb(255, 255, 0);
+  }
+  
+  /* ------------------ menu - bar -------------- */
+
+#top-menu {
+  display: flex;
+  flex-direction: row;
+  font-size: .5em;
+  position: absolute;
+  left: 3vw;
+  top: 30px;
+  margin: 0px;
+}
+
+#top-menu a {
+  text-decoration: none;
+}
+
+#top-menu a:hover  {
+  text-shadow: 3px 3px rgb(13, 94, 243);
+}
+
+#menu-bar {
+display: flex;
+flex-direction: row;
+font-size: .5em;
+position: absolute;
+bottom: 20vh;
+margin: 0px;
+}
+
+#menu-bar a {
+  text-decoration: none;
+}
+
+#menu-bar a:hover  {
+  text-shadow: 3px 3px rgb(13, 94, 243);
+}
+
+/* --- tech stack page --- */
+
+#top {
+  scroll-behavior: smooth;
+ overflow: hidden;
+}
+
+#top a {
+  text-decoration: none;
+}
+
+#top a:hover {
+  text-shadow: 2px 2px aliceblue;
+}
+
+.parallax {
+  background-image: url("https://c0.wallpaperflare.com/preview/69/379/800/business-laptop-office-computer.jpg");
+  height: 200px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about-me-div {
+  background-color: rgb(9, 0, 85);
+  font-family: RoboMono-Regular;
+  padding: 20vh 0vw 10vh;
+}
+
+.commented-title {
+  margin: 0vh 20vw 5vh;
+  color: rgb(9, 71, 188);
+  font-size: 2em;
+}
+
+#brand-statement {
+  margin: 0vh 5vw;
+  color: white;
+}
+
+#tech-stack-div {
+  background-color: rgb(9, 0, 85);
+  font-family: RoboMono-Regular;
+  padding: 5vh 0vw;
+}
+
+#languages-images-box {
+  margin-left: 5vw;
+}
+
+.languages-images {
+  width: 10vw;
+  height: 10vh;
+  margin: 0px 2px 0px 2px;
+}
+
+#bottom-div {
+  height: 10vh;
+  background-color: rgb(9, 0, 85);}
+
+.argument {
+  color: rgb(0, 89, 255);
+}
+
+.to-top-button {
+  position: relative;
+  left: 50vw;
+  margin: 0px;
+  font-size: 2em;
+  animation:
+  blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+/* -------- Footer -------- */
+
+#footer {
+  background-color: black;
+  color: white;
+  font-family: RoboMono-Regular;
+  text-align: center;
+}
+
+#footer h1 {
+margin: 0;
+}
+
+}
