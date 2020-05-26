@@ -64,7 +64,7 @@ position: relative;
 display: flex;
 flex-direction: row;
 font-size: 1.5em;
-margin: 15vh 10vw;
+margin: 15vh 8vw;
 position: absolute;
 bottom: 10vh
 }
@@ -560,11 +560,6 @@ margin: 0px;
 
 /* ----- home page ------ */
 
-/* .App {
-  position: relative;
-  height: 736px;
-  } */
-
 #entire-home-page {
   height: 637px;
 }
@@ -573,8 +568,6 @@ margin: 0px;
   background-color: rgb(9, 0, 85);
   font-family: RoboMono-Regular;
   height: px;
-  /* height: 100vh;
-  width: 100vw; */
   padding-top: 20vh;
 }
 
