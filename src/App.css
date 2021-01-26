@@ -1,632 +1,219 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0px; }
+
 .App {
-position: relative;
-}
-
-#home-page-div {
-  background-color: rgb(9, 0, 85);
-  font-family: RoboMono-Regular;
-  height: 100vh;
-  padding-top: 20vh;
-}
-
-#titled-header {
-  margin-left: 15vw;
-  font-size: 2em;
-}
-
-#const-title {
-  color: rgb(122, 0, 179);
+  height: 300vh;
+  width: 100%;
   margin: 0px;
-}
-
-#name-title {
-  color: rgb(255, 255, 0);
-  margin: 0vh 0vw 0vh 5vw;
-  font-size: 3.2em;
-}
-
-#programmer-title{
-  margin: 0vh 0vw 0vh 17vw;
-}
-
-#new{
-  color: rgb(9, 71, 188);
-}
-
-.method{
-  color:rgb(122, 0, 179);
-}
-
-.parenthesis {
-  color: rgb(255, 255, 0);
-}
-
-/* ------------------ menu - bar -------------- */
-
-#top-menu {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.5em;
-  margin: 15vh 8vw;
-  position: absolute;
-  top: -95px;
-}
-
-#top-menu a {
-  text-decoration: none;
-}
-
-#top-menu a:hover  {
-  text-shadow: 3px 3px rgb(13, 94, 243);
-}
-
-#menu-bar {
-display: flex;
-flex-direction: row;
-font-size: 1.5em;
-margin: 15vh 8vw;
-position: absolute;
-bottom: 10vh
-}
-
-.menu-item {
-margin: 0vh 2vw
-}
-
-#menu-bar a {
-  text-decoration: none;
-}
-
-#menu-bar a:hover  {
-  text-shadow: 3px 3px rgb(13, 94, 243);
-}
-
-/* --- tech stack page --- */
-
-#top {
-  scroll-behavior: smooth;
- overflow: hidden;
-}
-
-#top a {
-  text-decoration: none;
-}
-
-#top a:hover {
-  text-shadow: 2px 2px aliceblue;
-}
-
-.parallax {
-  background-image: url("https://c0.wallpaperflare.com/preview/69/379/800/business-laptop-office-computer.jpg");
-  height: 400px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  padding: 0px;
+  background-color: #f09b95;
+  background-image: url(".../../images/backgroundShape.svg");
   background-position: center;
+  /* Center the image */
   background-repeat: no-repeat;
+  /* Do not repeat the image */
   background-size: cover;
-}
+  /* Resize the background image to cover the entire container */ }
 
-#about-me-div {
-  background-color: rgb(9, 0, 85);
-  font-family: RoboMono-Regular;
-  padding: 20vh 0vw 10vh;
-}
-
-.commented-title {
-  margin-top: 5vh;
-  text-align: center;  
-  color: rgb(9, 71, 188);
-}
-
-#brand-statement {
-  margin: 0vh 5vw;
-  color: white;
-}
-
-#tech-stack-div {
-  background-color: rgb(9, 0, 85);
-  font-family: RoboMono-Regular;
-  padding: 5vh 0vw;
-}
-
-#languages-images-box {
-  margin-left: 15vw;
-}
-
-.languages-images {
-  width: 10vw;
-  height: 15vh;
-  margin: 0px 2px 0px 2px;
-}
-
-#bottom-div {
-  height: 10vh;
-  background-color: rgb(9, 0, 85);}
-
-.argument {
-  color: rgb(0, 89, 255);
-}
-
-.to-top-button {
+.background-img {
   position: relative;
-  left: 70vw;
+  right: 25%;
+  height: 75%;
+  top: -60%; }
+
+.heading-primary {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  color: #445770;
+  font-size: 10rem;
+  margin: 0%;
+  line-height: 12rem; }
+
+.heading-secondary {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #8b443a;
+  font-size: 7rem;
+  line-height: 1rem;
+  margin: 0%;
+  text-decoration: none; }
+
+.menu-header {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0px; }
+
+.body-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5rem;
+  color: #8b443a; }
+
+.button-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  color: #8b443a;
+  line-height: .1rem;
+  margin: 1%; }
+
+.body-header {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #f09b95;
+  font-size: 6.5rem;
   margin: 0px;
-  animation:
-  blinker 1s linear infinite;
-}
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
+  line-height: 5rem; }
 
-/* ------- projects page -------- */
+.body-text {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  color: black;
+  word-wrap: word-break;
+  font-size: 3rem;
+  margin: 0; }
 
-#projects-div {
-  background-color: rgb(9, 0, 85);
-  font-family: RoboMono-Regular;
-  padding: 20vh 0vw 10vh;
-}
-
-.project-area {
-  margin: 0vw 2.5vw 0vw 2.5vw;
-}
-
-.project-area a {
-  text-decoration: none;
-}
-
-.projects-titles {
-  color: white;
-  font-family: "Cabin", sans-serif;
-  margin-top: 50px;
-  text-align: center;
-  animation: blinker 2s linear infinite;
-}
-
-.projects-titles:hover {
-  color: rgb(0, 89, 255);
-}
-
-#project-row {
-  display: flex;
-  /* padding: 0vw 10vw 0vw 10vw; */
-}
-
-.project-images {
-  height: 25vh;
-  margin-left: 5vw;
-}
-
-.project-languages-images {
-  width: 5vw;
-  height: 10vh;
-  margin-left: 2.5vw;
-}
-
-.project-description {
-  color: white;
-}
-
-.github-link {
-  height: 8vh;
-  animation: blinker 2s linear infinite;
-  margin-left: 12vw;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
-/* ----- contact me page ------ */
-
-#contact-page {
-  background-color: rgb(9, 0, 85);
-  font-family: RoboMono-Regular;
-  padding: 20vh 0vw 10vh;
-  height: 100vh;
-}
-
-#contact-form-area {
+.hero-section {
+  height: 20%;
   background-color: white;
-  height:40vh;
-  width: 40vw;
-  margin: 0vh 30vw;
-  text-align: center;
-  border: 5px solid rgb(0, 89, 255);
-}
-
-#contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-input {
-  width: 30vw;
-  margin: 2vh 5vw;
-  border: 2px solid black;
-
-}
-
-#contact-form-button {
-  width: 10vw;
-  margin: 2vh 15vw;
-  border: 2px solid black;
-}
-
-.message-area {
-  width: 30vw;
-  margin-left: 5vw;
-}
-
-/* -------- Footer -------- */
-
-#footer {
-  background-color: black;
-  color: white;
-  font-family: RoboMono-Regular;
-  text-align: center;
-
-}
-
-#footer h1 {
-margin: 0;
-}
-
-@media only screen and (max-width: 414px) {
-  
-  /* ----- home page ------ */
-
-  .App {
-    position: relative;
-    height: 736px;
-    }
-
-  #home-page-div {
-    background-color: rgb(9, 0, 85);
-    font-family: RoboMono-Regular;
-    height: 505px;
-    /* height: 100vh;
-    width: 100vw; */
-    padding-top: 20vh;
-  }
-
-  #titled-header {
-    margin-left: 15vw;
-    font-size: 1em;
-  }
-  
-  #const-title {
-    color: rgb(122, 0, 179);
-    margin: 0px;
-  }
-  
-  #name-title {
-    color: rgb(255, 255, 0);
-    margin: 0vh 0vw 0vh 5vw;
-    font-size: 3.2em;
-  }
-  
-  #programmer-title{
-    margin: 0vh 0vw 0vh 17vw;
-  }
-  
-  #new{
-    color: rgb(9, 71, 188);
-  }
-  
-  .method{
-    color:rgb(122, 0, 179);
-  }
-  
-  .parenthesis {
-    color: rgb(255, 255, 0);
-  }
-  
-  /* ------------------ menu - bar -------------- */
-
-#top-menu {
-  display: flex;
-  flex-direction: row;
-  font-size: .5em;
-  position: absolute;
-  left: 3vw;
-  top: 30px;
-  margin: 0px;
-}
-
-#top-menu a {
-  text-decoration: none;
-}
-
-#top-menu a:hover  {
-  text-shadow: 3px 3px rgb(13, 94, 243);
-}
-
-#menu-bar {
-display: flex;
-flex-direction: row;
-font-size: .5em;
-position: absolute;
-bottom: 20vh;
-margin: 0px;
-}
-
-#menu-bar a {
-  text-decoration: none;
-}
-
-#menu-bar a:hover  {
-  text-shadow: 3px 3px rgb(13, 94, 243);
-}
-
-/* --- tech stack page --- */
-
-#top {
-  scroll-behavior: smooth;
- overflow: hidden;
-}
-
-#top a {
-  text-decoration: none;
-}
-
-#top a:hover {
-  text-shadow: 2px 2px aliceblue;
-}
-
-.parallax {
-  background-image: url("https://c0.wallpaperflare.com/preview/69/379/800/business-laptop-office-computer.jpg");
-  height: 200px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#about-me-div {
-  background-color: rgb(9, 0, 85);
-  font-family: RoboMono-Regular;
-  padding: 20vh 0vw 10vh;
-}
-
-.commented-title {
-  margin: 0vh 20vw 5vh;
-  color: rgb(9, 71, 188);
-  font-size: 2em;
-}
-
-#brand-statement {
-  margin: 0vh 5vw;
-  color: white;
-}
-
-#tech-stack-div {
-  background-color: rgb(9, 0, 85);
-  font-family: RoboMono-Regular;
-  padding: 5vh 0vw;
-}
-
-#languages-images-box {
-  margin-left: 5vw;
-}
-
-.languages-images {
-  width: 8vw;
-  height: 8vh;
-  margin: 0vh 1vw 0vh 2vw;
-}
-
-#bottom-div {
-  height: 10vh;
-  background-color: rgb(9, 0, 85);
-  padding-top: 3vh;
-}
-
-.argument {
-  color: rgb(0, 89, 255);
-}
-
-.to-top-button {
   position: relative;
-  left: 50vw;
-  margin: 0px;
-  font-size: 1.5em;
-  animation:
-  blinker 1s linear infinite;
-}
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
+  clip-path: polygon(0 0, 100% 0, 100% 64%, 0% 100%); }
 
-/* ------- projects page -------- */
+.first-name {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  transform: rotate(270deg);
+  transform-origin: 0 0; }
 
-#projects-div {
-  background-color: rgb(9, 0, 85);
-  font-family: RoboMono-Regular;
-  padding: 20vh 0vw 10vh;
-}
+.last-name {
+  position: absolute;
+  top: 5%;
+  left: 37%; }
 
-#project-row {
-  display: flex;
-  flex-direction: column;
-  /* padding: 0vw 10vw 0vw 10vw; */
-}
+.hero-menu {
+  position: absolute;
+  top: 20%;
+  left: 38%; }
 
-.project-area {
-  margin: 0vw 2.5vw 0vw 2.5vw;
- 
-}
+.about {
+  height: 20%;
+  background-color: white;
+  margin: 5% 2%;
+  padding: 2%;
+  position: relative;
+  z-index: 10; }
+  .about--text {
+    margin-top: 2%;
+    padding: 1.5%; }
 
-.project-area a {
-  text-decoration: none;
-}
-
-.projects-titles {
-  color: white;
-  font-family: "Cabin", sans-serif;
-  margin-top: 50px;
-  text-align: center;
-}
-
-.projects-titles:hover {
-  color: rgb(0, 89, 255);
-}
-
-.project-images {
-  height: 25vh;
-  margin-left: 15vw;
-}
-
-.project-languages-images {
-  width: 11vw;
-  height: 10vh;
-  margin-left: 20vw;
-}
-
-.project-description {
-  color: white;
-  margin-left: 12vw;
-}
-
-.github-link {
-  height: 8vh;
-  animation: blinker 2s linear infinite;
-  margin-left: 40vw;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
-/* -------- Footer -------- */
-
-#footer {
-  background-color: black;
-  color: white;
-  font-family: RoboMono-Regular;
-  text-align: center;
-}
-
-#footer h1 {
-margin: 0;
-}
-
-}
-
-@media only screen and (max-width: 1200px) {
-.parenthesis{
-  visibility: hidden;
-}
-}
-
-@media only screen and (max-width: 375px) {
-/* ------------------ menu - bar -------------- */
-
-#top-menu {
+.skills {
   display: flex;
   flex-direction: row;
-  font-size: .4em;
-  position: absolute;
-  left: 7vw;
-  top: 30px;
-  margin: 0px;
-}
+  margin-top: 5%; }
+  .skills--header {
+    margin-top: 2%; }
+  .skills__list {
+    width: 80%;
+    display: flex;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+    margin-left: 2.5%;
+    height: 100%; }
+    .skills__list--logo {
+      width: 10%;
+      height: 200%;
+      margin: 0% 1.5%; }
 
-#top-menu a {
-  text-decoration: none;
-}
+.contact {
+  height: 20%;
+  background-color: white;
+  margin: 5% 2%;
+  padding: 2.5%;
+  position: relative;
+  z-index: 10; }
+  .contact__form {
+    width: 100%;
+    margin-top: 5%;
+    height: 60%; }
+    .contact__form--input {
+      margin-right: 2%;
+      border: solid black 2px; }
 
-#top-menu a:hover  {
-  text-shadow: 3px 3px rgb(13, 94, 243);
-}
+.message-section {
+  margin-top: 5%;
+  height: 100%; }
+  .message-section--text {
+    height: 100%;
+    width: 80%;
+    margin-right: 10%;
+    border: solid black 2px; }
+  .message-section--button {
+    width: 8%;
+    height: 9%;
+    margin-bottom: 5%; }
 
-#menu-bar {
-display: flex;
-flex-direction: row;
-font-size: .4em;
-position: absolute;
-bottom: 20vh;
-margin: 0px;
-}
+.work {
+  height: 20%;
+  background-color: white;
+  margin: 5% 2%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 10; }
 
-#menu-bar a {
-  text-decoration: none;
-}
-
-#menu-bar a:hover  {
-  text-shadow: 3px 3px rgb(13, 94, 243);
-}
-
-/* ----- home page ------ */
-
-#entire-home-page {
-  height: 637px;
-}
-
-#home-page-div {
-  background-color: rgb(9, 0, 85);
-  font-family: RoboMono-Regular;
-  height: px;
-  padding-top: 20vh;
-}
-
-#titled-header {
-  margin-left: 8vw;
-  font-size: 1em;
-}
-
-#const-title {
-  color: rgb(122, 0, 179);
-  margin: 0px;
-}
-
-#name-title {
-  color: rgb(255, 255, 0);
-  margin: 0vh 0vw 0vh 5vw;
-  font-size: 3.2em;
-}
-
-#programmer-title{
-  margin: 0vh 0vw 0vh 17vw;
-}
-
-#new{
-  color: rgb(9, 71, 188);
-}
-
-.method{
-  color:rgb(122, 0, 179);
-}
-
-.parenthesis {
-  color: rgb(255, 255, 0);
-}
-
-#footer {
-  background-color: black;
-  color: white;
-  font-family: RoboMono-Regular;
+.work-list {
+  padding-top: 2%;
+  width: 25%;
   text-align: center;
- height: 100px
-}
+  margin-right: 1.5%; }
 
-/* --- tech stack page --- */
+.details {
+  width: 75%;
+  display: flex;
+  flex-direction: row; }
+  .details--photo {
+    height: 90%;
+    width: 70%;
+    margin: 2.5%; }
+  .details__info {
+    text-align: center;
+    height: 90%;
+    width: 70%;
+    margin: 2.5%; }
+    .details__info--button {
+      width: 80%;
+      height: 8%; }
 
-.commented-title {
-  margin: 0vh 25vw 5vh;
-  color: rgb(9, 71, 188);
-  font-size: 1.5em;
-}
-.tech-stack-page {
-  height:1150px;
-}
+.stack {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll; }
+  .stack--stack {
+    margin-bottom: 2%; }
+  .stack--image {
+    margin: 5% 0% 5% 35%;
+    height: 20%;
+    width: 30%; }
 
-}
+.menu {
+  background-color: #91abf2;
+  text-align: center;
+  position: fixed;
+  padding: .2%;
+  width: 100%;
+  z-index: 1000; }
+  .menu__links {
+    display: flex;
+    flex-direction: column; }
+    .menu__links--item {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      color: white;
+      font-size: 2rem;
+      margin: 0px;
+      text-decoration: none; }

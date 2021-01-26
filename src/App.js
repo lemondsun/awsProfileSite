@@ -1,20 +1,22 @@
 import React from 'react';
 import './App.css';
-import { Route} from 'react-router-dom'
-import HomePage from './components/HomePage'
-import TechStack from './components/TechStack'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+
+import Menu from '../src/components/Menu';
+import About from './components/About';
+import Hero from '../src/components/Hero';
+import Work from '../src/components/Work';
+import Contact from '../src/components/Contact'
 
 function App() {
   return (
     <div className="App">
-      <Route exact path='/' render={() => <HomePage />}/>
-      <Route exact path='/techstack' render={() => <TechStack />} />
-      <Route exact path='/projects' render={()=> <Projects/>}/>
-      <Route exact path='/contact' render={()=> <Contact/>}/>
-      <Footer />
+      <Menu />
+     
+      <Hero/>
+      <About/>
+        <Work />
+       <Contact/>
+   
     </div>
   );
 }

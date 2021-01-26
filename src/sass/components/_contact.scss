@@ -1,0 +1,35 @@
+.contact {
+  height: 20%;
+  background-color: white;
+  margin: $gutter-horizontal $gutter-vertical;
+  padding: 2.5%;
+  position: relative;
+  z-index: 10;
+
+  &__form {
+    width: 100%;
+    margin-top: 5%;
+    height: 60%;
+
+    &--input {
+      margin-right: $gutter-vertical;
+      border:solid black 2px;
+    }
+  }
+}
+
+.message-section {
+  margin-top: $gutter-horizontal;
+  height: 100%;
+  &--text {
+    height: 100%;
+    width: 80%;
+    margin-right: $gutter-vertical-large;
+    border:solid black 2px;
+  }
+  &--button {
+    width: 8%;
+    height: 9%;
+    margin-bottom: 5%;
+  }
+}
