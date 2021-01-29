@@ -1,7 +1,32 @@
-
 html {
   // defines what 1rem is.
   font-size: 62.5%;
+
+  @include respond(ipadPro) {
+    font-size: 60%;
+  }
+
+  @include respond(ipad) {
+    font-size: 40%;
+  }
+
+  @include respond(phone) {
+    font-size: 26%;
+  }
+
+  @include respond(phoneSlim) {
+    font-size: 25%;
+  }
+
+
+
+  // @include respond(iPadPro) {
+  //   font-size: 70%;
+  // }
+
+  // @include respond(iPad) {
+  //   font-size: 55%;
+  // }
 }
 
 body {
@@ -9,21 +34,36 @@ body {
 }
 
 .App {
+  @include respond(ipadPro) {
+    height: 170vh;
+  }
+
+  @include respond(ipad) {
+    height: 150vh;
+  }
+
+  @include respond(phone) {
+    height: 150vh;
+  }
+
+  @include respond(phoneSlim) {
+    height: 145vh;
+  }
+
+  
+  // @include respond(iPadPro) {
+  //   height: 200vh;
+  // }
+  // @include respond(iPad) {
+  //   height: 200vh;
+  // }
   height: 300vh;
   width: 100%;
   margin: 0px;
   padding: 0px;
   background-color: $primary-pink;
-  background-image: url('.../../images/backgroundShape.svg');
+  background-image: url(".../../images/backgroundShape.svg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
-
-.background-img {
-  position: relative;
-  right: 25%;
-  height: 75%;
-  top: -60%;
-}
-

@@ -22,12 +22,18 @@
   margin-top: $gutter-horizontal;
   height: 100%;
   &--text {
+    @include respond(phone) {
+      margin-right: 5%;
+    }
     height: 100%;
     width: 80%;
     margin-right: $gutter-vertical-large;
     border:solid black 2px;
   }
   &--button {
+    @include respond(phone) {
+      width: 10%;
+    }
     width: 8%;
     height: 9%;
     margin-bottom: 5%;

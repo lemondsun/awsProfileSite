@@ -32,6 +32,9 @@
     margin: 2.5%;
     
     &--button {
+      @include respond(phone) {
+        padding: 0px;
+      }
       width: 80%; 
       height: 8%;
     }
@@ -44,6 +47,9 @@
   display: flex;
   flex-direction: column;
   overflow: scroll;
+  @include respond(iPad) {
+    margin-bottom: 20%;
+    }
 
   &--stack {
     margin-bottom: 2%;

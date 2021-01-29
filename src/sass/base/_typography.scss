@@ -32,6 +32,10 @@
 }
 
 .button-link {
+  @include respond(phone) {
+    font-size: 2rem;
+
+  }
   font-family: "Oswald", sans-serif;
   font-size: 2.5rem;
   color: $link-red;

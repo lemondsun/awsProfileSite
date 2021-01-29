@@ -13,7 +13,9 @@
 }
 
 .skills {
-  
+  @include respond(iPad) {
+   margin-top: 2%;
+    }
   display: flex;
   flex-direction: row;
 margin-top: 5%;

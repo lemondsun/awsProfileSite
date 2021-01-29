@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import shotInFilmImg from '../images/shotInFilmImg.png'
 import wiseWordsImg from '../images/wiseWordsImg.png'
 import tartineImg from '../images/tartineImg.png'
@@ -16,32 +17,38 @@ export default function Work() {
 
   let shotInFilm = {
     src: shotInFilmImg,
-    tech: [illustratorLogo,reactLogo,rubyOnRails,javascriptLogo,postgresqlLogo,cssLogo]
+    tech: [illustratorLogo, reactLogo, rubyOnRails, javascriptLogo, postgresqlLogo, cssLogo],
+    site: 'https://www.shotinfilm.com/'
   }
   let wiseWords = {
     src: wiseWordsImg,
-    tech: [reactLogo, javascriptLogo, cssLogo]
+    tech: [reactLogo, javascriptLogo, cssLogo],
+    site: 'http://wisewords.surge.sh/'
   }
   let tartine = {
     src: tartineImg,
-    tech: [reactLogo, javascriptLogo, cssLogo]
+    tech: [reactLogo, javascriptLogo, cssLogo],
+    site: `http://tartine.surge.sh/`
   }
-  let stackImgs = shotInFilm.tech.map((img)=>  <img src={img} class='stack--image'/>)
+  let stackImgs = shotInFilm.tech.map((img)=>  <img src={img} class='stack--image' alt='logo'/>)
 
   let detailsSection = (subject) => {
-    debugger
-    stackImgs = subject.tech.map((img) => <img src={img} class='stack--image' />)
+    stackImgs = subject.tech.map((img) => <img src={img} class='stack--image' alt='logo'/>)
 
       return (<div class='details'>
-        <img src={subject.src} class='details--photo' />
+        <img src={subject.src} class='details--photo' alt='website snapshot'/>
         <div class='details__info'>
           <p class='body-text' >STACK</p>
           <div class='stack'>
             {stackImgs}
           </div>
-          <button>
-            VISIT SITE
-</button>
+          <a href={subject.site} target="_blank" rel="noopener noreferrer">
+          <button class='details__info--button' >
+              <p class='button-link' >
+              VISIT SITE
+              </p>
+            </button>
+            </a>
         </div>
       </div>
       )
@@ -59,15 +66,17 @@ export default function Work() {
         detailsSection(site)
         :
         <div class='details'>
-        <img src={shotInFilmImg} class='details--photo'/>
+        <img src={shotInFilmImg} class='details--photo' alt='website snapshot'/>
         <div class='details__info'>
       <p class='body-text stack--title'>STACK</p>
           <div class='stack'>
           {stackImgs}
-          </div>
+            </div>
+            <a href='https://www.shotinfilm.com/' target="_blank" rel="noopener noreferrer">
       <button class='details__info--button'>
         <p class='button-link'>VISIT SITE</p>
-      </button>
+              </button>
+              </a>
     </div>
       </div>}
     </div>
