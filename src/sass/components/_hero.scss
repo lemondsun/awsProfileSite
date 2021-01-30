@@ -15,6 +15,11 @@
   //   left: 18%;
   //   bottom: -9%;
   //   }
+@include respond(1158) {
+  left: 26%;
+  top: 79%;
+}
+
   @include respond(ipadPro) {
     left: 27%;
     bottom: -2%;
@@ -31,6 +36,10 @@
     @include respond(phone) {
       left: 20%;
       bottom: 2%;
+     }
+
+     @include respond(phoneSlim) {
+       
      }
     
     
@@ -50,6 +59,11 @@
   //   left: 30%;
   //   bottom: -9%;
   //   }
+
+  @include respond(1158) {
+    left: 35%;
+    top: 9%;
+  }
     @include respond(phone) {
       left: 32%;
       bottom: -8%;
@@ -68,6 +82,11 @@
   //   left: 31%;
   //   bottom: -9%;
   //   }
+
+  @include respond(1158) {
+    left: 36%;
+    top: 24%;
+  }
     @include respond(phone) {
       left: 33%;
       bottom: -8%;

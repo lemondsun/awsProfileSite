@@ -11,11 +11,11 @@ html {
   }
 
   @include respond(phone) {
-    font-size: 26%;
+    font-size: 24%;
   }
 
   @include respond(phoneSlim) {
-    font-size: 25%;
+    font-size: 24%;
   }
 
 
@@ -47,16 +47,8 @@ body {
   }
 
   @include respond(phoneSlim) {
-    height: 145vh;
+    height: 150vh;
   }
-
-  
-  // @include respond(iPadPro) {
-  //   height: 200vh;
-  // }
-  // @include respond(iPad) {
-  //   height: 200vh;
-  // }
   height: 300vh;
   width: 100%;
   margin: 0px;

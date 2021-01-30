@@ -22,10 +22,10 @@ html {
       font-size: 40%; } }
   @media only screen and (max-width: 26em) {
     html {
-      font-size: 26%; } }
+      font-size: 24%; } }
   @media only screen and (max-width: 24em) {
     html {
-      font-size: 25%; } }
+      font-size: 24%; } }
 
 body {
   margin: 0px; }
@@ -54,7 +54,7 @@ body {
       height: 150vh; } }
   @media only screen and (max-width: 24em) {
     .App {
-      height: 145vh; } }
+      height: 150vh; } }
 
 .heading-primary {
   font-family: "Oswald", sans-serif;
@@ -124,6 +124,10 @@ body {
   left: 30%;
   transform: rotate(270deg);
   transform-origin: 0 0; }
+  @media only screen and (max-width: 73em) {
+    .first-name {
+      left: 26%;
+      top: 79%; } }
   @media only screen and (max-width: 64em) {
     .first-name {
       left: 27%;
@@ -141,6 +145,10 @@ body {
   position: absolute;
   top: 5%;
   left: 37%; }
+  @media only screen and (max-width: 73em) {
+    .last-name {
+      left: 35%;
+      top: 9%; } }
   @media only screen and (max-width: 26em) {
     .last-name {
       left: 32%;
@@ -150,6 +158,10 @@ body {
   position: absolute;
   top: 20%;
   left: 38%; }
+  @media only screen and (max-width: 73em) {
+    .hero-menu {
+      left: 36%;
+      top: 24%; } }
   @media only screen and (max-width: 26em) {
     .hero-menu {
       left: 33%;
