@@ -21,7 +21,7 @@ $breakpoint argument choices:
   }
 
   @if $breakpoint == phoneSlim {
-    @media only screen and (max-width: 24em) {
+    @media only screen and (max-width: 25em) {
       @content;
     }
   }

@@ -35,6 +35,10 @@
       @include respond(phone) {
         padding: 0px;
       }
+      @include respond(phoneSlim) {
+        width: 100%;
+        margin-top:8%;
+      }
       width: 80%; 
       height: 8%;
     }

@@ -22,10 +22,10 @@ html {
       font-size: 40%; } }
   @media only screen and (max-width: 26em) {
     html {
-      font-size: 24%; } }
-  @media only screen and (max-width: 24em) {
+      font-size: 20%; } }
+  @media only screen and (max-width: 25em) {
     html {
-      font-size: 24%; } }
+      font-size: 27%; } }
 
 body {
   margin: 0px; }
@@ -51,8 +51,8 @@ body {
       height: 150vh; } }
   @media only screen and (max-width: 26em) {
     .App {
-      height: 150vh; } }
-  @media only screen and (max-width: 24em) {
+      height: 140vh; } }
+  @media only screen and (max-width: 25em) {
     .App {
       height: 150vh; } }
 
@@ -72,6 +72,9 @@ body {
   line-height: 1rem;
   margin: 0%;
   text-decoration: none; }
+  @media only screen and (max-width: 25em) {
+    .heading-secondary {
+      line-height: 0rem; } }
 
 .menu-header {
   font-family: "Oswald", sans-serif;
@@ -94,6 +97,9 @@ body {
   @media only screen and (max-width: 26em) {
     .button-link {
       font-size: 2rem; } }
+  @media only screen and (max-width: 25em) {
+    .button-link {
+      font-size: 1.5rem; } }
 
 .body-header {
   font-family: "Oswald", sans-serif;
@@ -102,6 +108,9 @@ body {
   font-size: 6.5rem;
   margin: 0px;
   line-height: 5rem; }
+  @media only screen and (max-width: 25em) {
+    .body-header {
+      line-height: 3rem; } }
 
 .body-text {
   font-family: "Merriweather", serif;
@@ -140,6 +149,10 @@ body {
     .first-name {
       left: 20%;
       bottom: 2%; } }
+  @media only screen and (max-width: 25em) {
+    .first-name {
+      left: 14%;
+      bottom: 2%; } }
 
 .last-name {
   position: absolute;
@@ -153,6 +166,10 @@ body {
     .last-name {
       left: 32%;
       bottom: -8%; } }
+  @media only screen and (max-width: 25em) {
+    .last-name {
+      left: 32%;
+      top: 2%; } }
 
 .hero-menu {
   position: absolute;
@@ -166,6 +183,9 @@ body {
     .hero-menu {
       left: 33%;
       bottom: -8%; } }
+  @media only screen and (max-width: 25em) {
+    .hero-menu {
+      top: 30%; } }
 
 .about {
   height: 20%;
@@ -182,6 +202,9 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 5%; }
+  @media only screen and (max-width: 25em) {
+    .skills {
+      margin-top: 1%; } }
   .skills--header {
     margin-top: 2%; }
   .skills__list {
@@ -264,6 +287,10 @@ body {
       @media only screen and (max-width: 26em) {
         .details__info--button {
           padding: 0px; } }
+      @media only screen and (max-width: 25em) {
+        .details__info--button {
+          width: 100%;
+          margin-top: 8%; } }
 
 .stack {
   height: 70%;
