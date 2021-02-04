@@ -1,0 +1,323 @@
+/*
+0-600px: phone
+600-900px: Tablet portrait
+900-1200px: Tablet landscape
+[1200-1800] is where our normal styles apply
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+1em = 16px
+*/
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 64em) {
+    html {
+      font-size: 60%; } }
+  @media only screen and (max-width: 48em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (max-width: 26em) {
+    html {
+      font-size: 20%; } }
+  @media only screen and (max-width: 25em) {
+    html {
+      font-size: 27%; } }
+
+body {
+  margin: 0px; }
+
+.App {
+  height: 300vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f09b95;
+  background-image: url(".../../images/backgroundShape.svg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */ }
+  @media only screen and (max-width: 64em) {
+    .App {
+      height: 170vh; } }
+  @media only screen and (max-width: 48em) {
+    .App {
+      height: 150vh; } }
+  @media only screen and (max-width: 26em) {
+    .App {
+      height: 140vh; } }
+  @media only screen and (max-width: 25em) {
+    .App {
+      height: 150vh; } }
+
+.heading-primary {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  color: #445770;
+  font-size: 10rem;
+  margin: 0%;
+  line-height: 12rem; }
+
+.heading-secondary {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #8b443a;
+  font-size: 7rem;
+  line-height: 1rem;
+  margin: 0%;
+  text-decoration: none; }
+  @media only screen and (max-width: 25em) {
+    .heading-secondary {
+      line-height: 0rem; } }
+
+.menu-header {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0px; }
+
+.body-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5rem;
+  color: #8b443a; }
+
+.button-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  color: #8b443a;
+  line-height: .1rem;
+  margin: 1%; }
+  @media only screen and (max-width: 26em) {
+    .button-link {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 25em) {
+    .button-link {
+      font-size: 1.5rem; } }
+
+.body-header {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #f09b95;
+  font-size: 6.5rem;
+  margin: 0px;
+  line-height: 5rem; }
+  @media only screen and (max-width: 25em) {
+    .body-header {
+      line-height: 3rem; } }
+
+.body-text {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  color: black;
+  word-wrap: word-break;
+  font-size: 3rem;
+  margin: 0; }
+
+.hero-section {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 64%, 0% 100%); }
+
+.first-name {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  transform: rotate(270deg);
+  transform-origin: 0 0; }
+  @media only screen and (max-width: 73em) {
+    .first-name {
+      left: 26%;
+      top: 79%; } }
+  @media only screen and (max-width: 64em) {
+    .first-name {
+      left: 27%;
+      bottom: -2%; } }
+  @media only screen and (max-width: 48em) {
+    .first-name {
+      left: 28%;
+      bottom: -2%; } }
+  @media only screen and (max-width: 26em) {
+    .first-name {
+      left: 20%;
+      bottom: 2%; } }
+  @media only screen and (max-width: 25em) {
+    .first-name {
+      left: 14%;
+      bottom: 2%; } }
+
+.last-name {
+  position: absolute;
+  top: 5%;
+  left: 37%; }
+  @media only screen and (max-width: 73em) {
+    .last-name {
+      left: 35%;
+      top: 9%; } }
+  @media only screen and (max-width: 26em) {
+    .last-name {
+      left: 32%;
+      bottom: -8%; } }
+  @media only screen and (max-width: 25em) {
+    .last-name {
+      left: 32%;
+      top: 2%; } }
+
+.hero-menu {
+  position: absolute;
+  top: 20%;
+  left: 38%; }
+  @media only screen and (max-width: 73em) {
+    .hero-menu {
+      left: 36%;
+      top: 24%; } }
+  @media only screen and (max-width: 26em) {
+    .hero-menu {
+      left: 33%;
+      bottom: -8%; } }
+  @media only screen and (max-width: 25em) {
+    .hero-menu {
+      top: 30%; } }
+
+.about {
+  height: 20%;
+  background-color: white;
+  margin: 5% 2%;
+  padding: 2%;
+  position: relative;
+  z-index: 10; }
+  .about--text {
+    margin-top: 2%;
+    padding: 1.5%; }
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%; }
+  @media only screen and (max-width: 25em) {
+    .skills {
+      margin-top: 1%; } }
+  .skills--header {
+    margin-top: 2%; }
+  .skills__list {
+    width: 80%;
+    display: flex;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+    margin-left: 2.5%;
+    height: 100%; }
+    .skills__list--logo {
+      width: 10%;
+      height: 200%;
+      margin: 0% 1.5%; }
+
+.contact {
+  height: 20%;
+  background-color: white;
+  margin: 5% 2%;
+  padding: 2.5%;
+  position: relative;
+  z-index: 10; }
+  .contact__form {
+    width: 100%;
+    margin-top: 5%;
+    height: 60%; }
+    .contact__form--input {
+      margin-right: 2%;
+      border: solid black 2px; }
+
+.message-section {
+  margin-top: 5%;
+  height: 100%; }
+  .message-section--text {
+    height: 100%;
+    width: 80%;
+    margin-right: 10%;
+    border: solid black 2px; }
+    @media only screen and (max-width: 26em) {
+      .message-section--text {
+        margin-right: 5%; } }
+  .message-section--button {
+    width: 8%;
+    height: 9%;
+    margin-bottom: 5%; }
+    @media only screen and (max-width: 26em) {
+      .message-section--button {
+        width: 10%; } }
+
+.work {
+  height: 20%;
+  background-color: white;
+  margin: 5% 2%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 10; }
+
+.work-list {
+  padding-top: 2%;
+  width: 25%;
+  text-align: center;
+  margin-right: 1.5%; }
+
+.details {
+  width: 75%;
+  display: flex;
+  flex-direction: row; }
+  .details--photo {
+    height: 90%;
+    width: 70%;
+    margin: 2.5%; }
+  .details__info {
+    text-align: center;
+    height: 90%;
+    width: 70%;
+    margin: 2.5%; }
+    .details__info--button {
+      width: 80%;
+      height: 8%; }
+      @media only screen and (max-width: 26em) {
+        .details__info--button {
+          padding: 0px; } }
+      @media only screen and (max-width: 25em) {
+        .details__info--button {
+          width: 100%;
+          margin-top: 8%; } }
+
+.stack {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll; }
+  .stack--stack {
+    margin-bottom: 2%; }
+  .stack--image {
+    margin: 5% 0% 5% 35%;
+    height: 20%;
+    width: 30%; }
+
+.menu {
+  background-color: #91abf2;
+  text-align: center;
+  position: fixed;
+  padding: .2%;
+  width: 100%;
+  z-index: 1000; }
+  .menu__links {
+    display: flex;
+    flex-direction: column; }
+    .menu__links--item {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      color: white;
+      font-size: 2rem;
+      margin: 0px;
+      text-decoration: none; }

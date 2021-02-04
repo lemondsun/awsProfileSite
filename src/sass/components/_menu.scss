@@ -1,0 +1,22 @@
+.menu {
+  background-color: $menu-blue;
+  text-align: center;
+  position: fixed;
+  padding: .2%;
+  width: 100%;
+  z-index: 1000;
+
+  &__links {
+display: flex;
+flex-direction: column;
+
+&--item {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 2rem;
+  margin: 0px;
+  text-decoration: none;
+}
+  }
+}

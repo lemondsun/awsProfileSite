@@ -1,0 +1,52 @@
+//media  query manager
+/*
+0-600px: phone
+600-900px: Tablet portrait
+900-1200px: Tablet landscape
+[1200-1800] is where our normal styles apply
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == iphone {
+    @media only screen and (device-width: 24em) and (device-height: 53em) and (-webkit-device-pixel-ratio: 3) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phoneSlim {
+    @media only screen and (max-width: 25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 26em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == ipad {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == ipadPro {
+    @media only screen and (max-width: 64em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 1158 {
+    @media only screen and (max-width: 73em) {
+      @content;
+    }
+  }
+}
