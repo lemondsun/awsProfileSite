@@ -32,8 +32,11 @@
     margin: 2.5%;
     
     &--button {
-      @include respond(phone) {
-        padding: 0px;
+      @include respond(501){
+        font-size: 20%;
+      }
+      @include respond(670) {
+        width: 100%;
       }
       @include respond(phoneSlim) {
         width: 100%;

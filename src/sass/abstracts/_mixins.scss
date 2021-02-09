@@ -14,11 +14,6 @@ $breakpoint argument choices:
 1em = 16px
 */
 @mixin respond($breakpoint) {
-  @if $breakpoint == iphone {
-    @media only screen and (device-width: 24em) and (device-height: 53em) and (-webkit-device-pixel-ratio: 3) {
-      @content;
-    }
-  }
 
   @if $breakpoint == phoneSlim {
     @media only screen and (max-width: 25em) {
@@ -26,26 +21,51 @@ $breakpoint argument choices:
     }
   }
 
-  @if $breakpoint == phone {
-    @media only screen and (max-width: 26em) {
+  @if $breakpoint == 501 {
+    @media only screen and (max-width: 501px) 
+    {
       @content;
     }
   }
 
-  @if $breakpoint == ipad {
-    @media only screen and (max-width: 48em) {
+  @if $breakpoint == 670 {
+    @media only screen and (max-width: 670px) 
+    {
       @content;
     }
   }
 
-  @if $breakpoint == ipadPro {
-    @media only screen and (max-width: 64em) {
+  @if $breakpoint == 770 {
+    @media only screen and (max-width: 770px) 
+    {
       @content;
     }
   }
 
-  @if $breakpoint == 1158 {
-    @media only screen and (max-width: 73em) {
+  @if $breakpoint == 1025 {
+    @media only screen and (max-width: 1025px) 
+    {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 1140 {
+    @media only screen and (max-width: 1140px) 
+    {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 1270 {
+    @media only screen and (max-width: 1270px) 
+    {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 1440 {
+    @media only screen and (max-width: 1461px) 
+    {
       @content;
     }
   }
