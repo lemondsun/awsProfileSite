@@ -13,7 +13,7 @@
 
     &--input {
       margin-right: $gutter-vertical;
-      border:solid black 2px;
+      border: solid black 2px;
     }
   }
 }
@@ -22,15 +22,22 @@
   margin-top: $gutter-horizontal;
   height: 100%;
   &--text {
+    @include respond(501) {
+      width: 75%;
+    }
     @include respond(phone) {
       margin-right: 5%;
     }
     height: 100%;
     width: 80%;
     margin-right: $gutter-vertical-large;
-    border:solid black 2px;
+    border: solid black 2px;
   }
   &--button {
+    @include respond(501) {
+      width: 10%;
+      height: 11%;
+    }
     @include respond(phone) {
       width: 10%;
     }

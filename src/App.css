@@ -13,16 +13,22 @@ $breakpoint argument choices:
 1em = 16px
 */
 html {
-  font-size: 62.5%; }
-  @media only screen and (max-width: 64em) {
+  font-size: 61%; }
+  @media only screen and (max-width: 1140px) {
     html {
-      font-size: 60%; } }
-  @media only screen and (max-width: 48em) {
+      font-size: 55%; } }
+  @media only screen and (max-width: 1025px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 770px) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (max-width: 670px) {
     html {
       font-size: 40%; } }
-  @media only screen and (max-width: 26em) {
+  @media only screen and (max-width: 501px) {
     html {
-      font-size: 20%; } }
+      font-size: 26%; } }
   @media only screen and (max-width: 25em) {
     html {
       font-size: 27%; } }
@@ -31,7 +37,7 @@ body {
   margin: 0px; }
 
 .App {
-  height: 300vh;
+  height: 390vh;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -43,15 +49,24 @@ body {
   /* Do not repeat the image */
   background-size: cover;
   /* Resize the background image to cover the entire container */ }
-  @media only screen and (max-width: 64em) {
+  @media only screen and (max-width: 1461px) {
     .App {
-      height: 170vh; } }
-  @media only screen and (max-width: 48em) {
+      height: 375vh; } }
+  @media only screen and (max-width: 1270px) {
     .App {
-      height: 150vh; } }
-  @media only screen and (max-width: 26em) {
+      height: 350vh; } }
+  @media only screen and (max-width: 1140px) {
     .App {
-      height: 140vh; } }
+      height: 310vh; } }
+  @media only screen and (max-width: 770px) {
+    .App {
+      height: 260vh; } }
+  @media only screen and (max-width: 670px) {
+    .App {
+      height: 235vh; } }
+  @media only screen and (max-width: 501px) {
+    .App {
+      height: 195vh; } }
   @media only screen and (max-width: 25em) {
     .App {
       height: 150vh; } }
@@ -94,9 +109,6 @@ body {
   color: #8b443a;
   line-height: .1rem;
   margin: 1%; }
-  @media only screen and (max-width: 26em) {
-    .button-link {
-      font-size: 2rem; } }
   @media only screen and (max-width: 25em) {
     .button-link {
       font-size: 1.5rem; } }
@@ -125,47 +137,49 @@ body {
   height: 20%;
   background-color: white;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 64%, 0% 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%); }
 
 .first-name {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: 30%;
   transform: rotate(270deg);
   transform-origin: 0 0; }
-  @media only screen and (max-width: 73em) {
+  @media only screen and (max-width: 1461px) {
     .first-name {
-      left: 26%;
-      top: 79%; } }
-  @media only screen and (max-width: 64em) {
+      top: 77%; } }
+  @media only screen and (max-width: 1270px) {
+    .first-name {
+      left: 29%;
+      bottom: -9%; } }
+  @media only screen and (max-width: 1025px) {
+    .first-name {
+      left: 29%;
+      bottom: 0%; } }
+  @media only screen and (max-width: 770px) {
     .first-name {
       left: 27%;
-      bottom: -2%; } }
-  @media only screen and (max-width: 48em) {
-    .first-name {
-      left: 28%;
-      bottom: -2%; } }
-  @media only screen and (max-width: 26em) {
-    .first-name {
-      left: 20%;
-      bottom: 2%; } }
+      bottom: -5%; } }
   @media only screen and (max-width: 25em) {
     .first-name {
       left: 14%;
-      bottom: 2%; } }
+      bottom: -53%; } }
+  @media only screen and (max-width: 501px) {
+    .first-name {
+      top: 212px;
+      left: 15%; } }
 
 .last-name {
   position: absolute;
   top: 5%;
   left: 37%; }
-  @media only screen and (max-width: 73em) {
+  @media only screen and (max-width: 1461px) {
     .last-name {
-      left: 35%;
-      top: 9%; } }
-  @media only screen and (max-width: 26em) {
+      top: 14%; } }
+  @media only screen and (max-width: 501px) {
     .last-name {
-      left: 32%;
-      bottom: -8%; } }
+      top: 10%;
+      left: 28%; } }
   @media only screen and (max-width: 25em) {
     .last-name {
       left: 32%;
@@ -175,14 +189,13 @@ body {
   position: absolute;
   top: 20%;
   left: 38%; }
-  @media only screen and (max-width: 73em) {
+  @media only screen and (max-width: 1461px) {
     .hero-menu {
-      left: 36%;
-      top: 24%; } }
-  @media only screen and (max-width: 26em) {
+      top: 29%; } }
+  @media only screen and (max-width: 501px) {
     .hero-menu {
-      left: 33%;
-      bottom: -8%; } }
+      top: 29%;
+      left: 34%; } }
   @media only screen and (max-width: 25em) {
     .hero-menu {
       top: 30%; } }
@@ -242,16 +255,17 @@ body {
     width: 80%;
     margin-right: 10%;
     border: solid black 2px; }
-    @media only screen and (max-width: 26em) {
+    @media only screen and (max-width: 501px) {
       .message-section--text {
-        margin-right: 5%; } }
+        width: 75%; } }
   .message-section--button {
     width: 8%;
     height: 9%;
     margin-bottom: 5%; }
-    @media only screen and (max-width: 26em) {
+    @media only screen and (max-width: 501px) {
       .message-section--button {
-        width: 10%; } }
+        width: 10%;
+        height: 11%; } }
 
 .work {
   height: 20%;
@@ -284,9 +298,12 @@ body {
     .details__info--button {
       width: 80%;
       height: 8%; }
-      @media only screen and (max-width: 26em) {
+      @media only screen and (max-width: 501px) {
         .details__info--button {
-          padding: 0px; } }
+          font-size: 20%; } }
+      @media only screen and (max-width: 670px) {
+        .details__info--button {
+          width: 100%; } }
       @media only screen and (max-width: 25em) {
         .details__info--button {
           width: 100%;

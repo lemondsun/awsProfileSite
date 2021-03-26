@@ -3,103 +3,80 @@
   height: 20%;
   background-color: white;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 64%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
 }
 
 .first-name {
-  // @include respond(iPadPro) {
-  //   left: 20%;
-  //   bottom: -5%;
-  //  }
-  //  @include respond(iPad) {
-  //   left: 18%;
-  //   bottom: -9%;
-  //   }
-@include respond(1158) {
-  left: 26%;
-  top: 79%;
-}
-
-  @include respond(ipadPro) {
-    left: 27%;
-    bottom: -2%;
+  @include respond(1440) {
+    top: 77%;
   }
 
-  @include respond(ipad) {
-    left: 28%;
-    bottom: -2%;
-   }
+  @include respond(1270) {
+    left: 29%;
+    bottom: -9%;
+  }
+  @include respond(1025) {
+    left: 29%;
+    bottom: 0%;
+  }
 
-  @include respond(phonePlus) {
-    bottom: 50%;
-   }
-    @include respond(phone) {
-      left: 20%;
-      bottom: 2%;
-     }
+  @include respond(770) {
+    left: 27%;
+    bottom: -5%;
+  }
+  @include respond(phone) {
+    left: 20%;
+    bottom: 2%;
+  }
 
-     @include respond(phoneSlim) {
-      left: 14%;
-      bottom: 2%;
-     }
-    
-    
+  @include respond(phoneSlim) {
+    left: 14%;
+    bottom: -53%;
+  }
+
+  @include respond(501) {
+    top: 212px;
+    left: 15%;
+  }
+
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: 30%;
   transform: rotate(270deg);
   transform-origin: 0 0;
 }
 
 .last-name {
-  // @include respond(iPadPro) {
-  //   top: 8%;
-  //   left: 31%;
-  // }
-  // @include respond(iPad) {
-  //   left: 30%;
-  //   bottom: -9%;
-  //   }
-
-  @include respond(1158) {
-    left: 35%;
-    top: 9%;
+  @include respond(1440) {
+    top: 14%;
   }
-    @include respond(phone) {
-      left: 32%;
-      bottom: -8%;
-     }
-     @include respond(phoneSlim) {
-      left: 32%;
-      top: 2%;
-     }
-    
+  @include respond(501) {
+    top: 10%;
+    left: 28%;
+  }
+  @include respond(phoneSlim) {
+    left: 32%;
+    top: 2%;
+  }
+
   position: absolute;
   top: 5%;
   left: 37%;
 }
 
-.hero-menu{
-  // @include respond(iPadPro) {
-  //   top: 22%;
-  //   left: 32%;
-  // }
-  // @include respond(iPad) {
-  //   left: 31%;
-  //   bottom: -9%;
-  //   }
-
-  @include respond(1158) {
-    left: 36%;
-    top: 24%;
+.hero-menu {
+  @include respond(1440) {
+    top: 29%;
   }
-    @include respond(phone) {
-      left: 33%;
-      bottom: -8%;
-     }
-     @include respond(phoneSlim) {
-       top: 30%;
-     }
+
+  @include respond(501) {
+    top: 29%;
+    left: 34%;
+  }
+
+  @include respond(phoneSlim) {
+    top: 30%;
+  }
   position: absolute;
   top: 20%;
   left: 38%;

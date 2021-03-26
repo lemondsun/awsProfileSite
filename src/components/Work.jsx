@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import shotInFilmImg from '../images/shotInFilmImg.png'
 import wiseWordsImg from '../images/wiseWordsImg.png'
 import tartineImg from '../images/tartineImg.png'
+import churchwebsite from  '../images/church.png'
 
 import illustratorLogo from '../images/illustratorLogo.png'
 import reactLogo from '../images/reactLogo.png'
@@ -10,6 +11,8 @@ import rubyOnRails from '../images/rubyOnRails.png'
 import javascriptLogo from '../images/javascriptLogo.png'
 import postgresqlLogo from '../images/postgresqlLogo.png'
 import cssLogo from '../images/cssLogo.png'
+import sassLogo from '../images/sassLogo.png'
+
 
 
 export default function Work() {
@@ -29,6 +32,12 @@ export default function Work() {
     src: tartineImg,
     tech: [reactLogo, javascriptLogo, cssLogo],
     site: `http://tartine.surge.sh/`
+  }
+
+  let churchWebsite = {
+    src: churchwebsite,
+    tech: [reactLogo, javascriptLogo, cssLogo, sassLogo, illustratorLogo],
+    site: 'http://churchsample.surge.sh/'
   }
   let stackImgs = shotInFilm.tech.map((img)=>  <img src={img} class='stack--image' alt='logo'/>)
 
@@ -58,6 +67,7 @@ export default function Work() {
       <div class='work-list'>
         <p class="body-header">MY WORK</p>
         <p class='body-link' onClick={() => setSite(shotInFilm)}>SHOT IN FILM</p>
+        <p class='body-link' onClick={() => setSite(churchWebsite)}>CHURCH WEBSITE</p>
         <p class='body-link' onClick={() => setSite(wiseWords)}>WISE - WORDS</p>
         <p class='body-link' onClick={() => setSite(tartine)}>TARTINE</p>
 
