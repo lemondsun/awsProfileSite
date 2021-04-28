@@ -14,24 +14,24 @@ $breakpoint argument choices:
 */
 html {
   font-size: 61%; }
-  @media only screen and (max-width: 1140px) {
-    html {
-      font-size: 55%; } }
-  @media only screen and (max-width: 1025px) {
-    html {
-      font-size: 50%; } }
-  @media only screen and (max-width: 770px) {
-    html {
-      font-size: 45%; } }
-  @media only screen and (max-width: 670px) {
-    html {
-      font-size: 40%; } }
-  @media only screen and (max-width: 501px) {
-    html {
-      font-size: 26%; } }
-  @media only screen and (max-width: 25em) {
-    html {
-      font-size: 27%; } }
+
+@media only screen and (max-width: 1140px) {
+  font-size: 55%; }
+
+@media only screen and (max-width: 1025px) {
+  font-size: 50%; }
+
+@media only screen and (max-width: 770px) {
+  font-size: 45%; }
+
+@media only screen and (max-width: 670px) {
+  font-size: 40%; }
+
+@media only screen and (max-width: 501px) {
+  font-size: 26%; }
+
+@media only screen and (max-width: 25em) {
+  font-size: 27%; }
 
 body {
   margin: 0px; }
@@ -60,16 +60,16 @@ body {
       height: 310vh; } }
   @media only screen and (max-width: 770px) {
     .App {
-      height: 260vh; } }
+      height: 260vh;
+      width: 116%; } }
   @media only screen and (max-width: 670px) {
     .App {
-      height: 235vh; } }
+      height: 235vh;
+      width: 125%; } }
   @media only screen and (max-width: 501px) {
     .App {
-      height: 195vh; } }
-  @media only screen and (max-width: 25em) {
-    .App {
-      height: 150vh; } }
+      height: 195vh;
+      width: 125%; } }
 
 .heading-primary {
   font-family: "Oswald", sans-serif;
@@ -78,6 +78,9 @@ body {
   font-size: 10rem;
   margin: 0%;
   line-height: 12rem; }
+  @media only screen and (max-width: 670px) {
+    .heading-primary {
+      font-size: 8rem; } }
 
 .heading-secondary {
   font-family: "Oswald", sans-serif;
@@ -87,9 +90,15 @@ body {
   line-height: 1rem;
   margin: 0%;
   text-decoration: none; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 1270px) {
     .heading-secondary {
-      line-height: 0rem; } }
+      font-size: 5rem; } }
+  @media only screen and (max-width: 770px) {
+    .heading-secondary {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 670px) {
+    .heading-secondary {
+      font-size: 3rem; } }
 
 .menu-header {
   font-family: "Oswald", sans-serif;
@@ -102,6 +111,9 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 3.5rem;
   color: #8b443a; }
+  @media only screen and (max-width: 770px) {
+    .body-link {
+      font-size: 2rem; } }
 
 .button-link {
   font-family: "Oswald", sans-serif;
@@ -109,6 +121,9 @@ body {
   color: #8b443a;
   line-height: .1rem;
   margin: 1%; }
+  @media only screen and (max-width: 770px) {
+    .button-link {
+      font-size: 1rem; } }
   @media only screen and (max-width: 25em) {
     .button-link {
       font-size: 1.5rem; } }
@@ -120,6 +135,9 @@ body {
   font-size: 6.5rem;
   margin: 0px;
   line-height: 5rem; }
+  @media only screen and (max-width: 770px) {
+    .body-header {
+      font-size: 4.5rem; } }
   @media only screen and (max-width: 25em) {
     .body-header {
       line-height: 3rem; } }
@@ -131,20 +149,36 @@ body {
   word-wrap: word-break;
   font-size: 3rem;
   margin: 0; }
+  @media only screen and (max-width: 770px) {
+    .body-text {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 670px) {
+    .body-text {
+      font-size: 2rem; } }
 
 .hero-section {
   width: 100%;
   height: 20%;
   background-color: white;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+  padding-top: 5%; }
+
+.hero-name {
+  display: flex;
+  margin: 0% 0vw 0% 30vw; }
+  @media only screen and (max-width: 1270px) {
+    .hero-name {
+      margin: 0% 0vw 0% 20vw; } }
+  @media only screen and (max-width: 770px) {
+    .hero-name {
+      margin: 0% 0vw 0% 10vw; } }
+  @media only screen and (max-width: 670px) {
+    .hero-name {
+      margin: 0% 0vw 0% 20vw; } }
 
 .first-name {
-  position: absolute;
-  bottom: 10%;
-  left: 30%;
-  transform: rotate(270deg);
-  transform-origin: 0 0; }
+  margin-right: 2.5%; }
   @media only screen and (max-width: 1461px) {
     .first-name {
       top: 77%; } }
@@ -169,22 +203,6 @@ body {
       top: 212px;
       left: 15%; } }
 
-.last-name {
-  position: absolute;
-  top: 5%;
-  left: 37%; }
-  @media only screen and (max-width: 1461px) {
-    .last-name {
-      top: 14%; } }
-  @media only screen and (max-width: 501px) {
-    .last-name {
-      top: 10%;
-      left: 28%; } }
-  @media only screen and (max-width: 25em) {
-    .last-name {
-      left: 32%;
-      top: 2%; } }
-
 .hero-menu {
   position: absolute;
   top: 20%;
@@ -192,6 +210,17 @@ body {
   @media only screen and (max-width: 1461px) {
     .hero-menu {
       top: 29%; } }
+  @media only screen and (max-width: 1270px) {
+    .hero-menu {
+      top: 29%;
+      left: 40%; } }
+  @media only screen and (max-width: 770px) {
+    .hero-menu {
+      top: 35%;
+      left: 35%; } }
+  @media only screen and (max-width: 670px) {
+    .hero-menu {
+      left: 40%; } }
   @media only screen and (max-width: 501px) {
     .hero-menu {
       top: 29%;
@@ -199,6 +228,14 @@ body {
   @media only screen and (max-width: 25em) {
     .hero-menu {
       top: 30%; } }
+
+.hero-menu-long {
+  visibility: hidden; }
+  @media only screen and (max-width: 1270px) {
+    .hero-menu-long {
+      visibility: visible;
+      display: flex;
+      flex-direction: row; } }
 
 .about {
   height: 20%;
@@ -210,11 +247,17 @@ body {
   .about--text {
     margin-top: 2%;
     padding: 1.5%; }
+    @media only screen and (max-width: 1270px) {
+      .about--text {
+        margin-top: 0%; } }
 
 .skills {
   display: flex;
   flex-direction: row;
   margin-top: 5%; }
+  @media only screen and (max-width: 1270px) {
+    .skills {
+      margin-top: 0%; } }
   @media only screen and (max-width: 25em) {
     .skills {
       margin-top: 1%; } }
@@ -243,6 +286,9 @@ body {
     width: 100%;
     margin-top: 5%;
     height: 60%; }
+    @media only screen and (max-width: 770px) {
+      .contact__form {
+        margin-top: 2%; } }
     .contact__form--input {
       margin-right: 2%;
       border: solid black 2px; }
@@ -281,6 +327,9 @@ body {
   width: 25%;
   text-align: center;
   margin-right: 1.5%; }
+
+.body-link {
+  margin-top: 0%; }
 
 .details {
   width: 75%;

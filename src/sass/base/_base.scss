@@ -1,43 +1,43 @@
 html {
   // defines what 1rem is.
   font-size: 61%;
+}
 
-  @include respond(1140) {
-   font-size: 55%;
-  }
+@include respond(1140) {
+  font-size: 55%;
+}
 
-  @include respond(1025) {
-    font-size: 50%;
-  }
+@include respond(1025) {
+  font-size: 50%;
+}
 
-  @include respond(770) {
-    font-size: 45%;
-  }
+@include respond(770) {
+  font-size: 45%;
+}
 
-  @include respond(670) {
-    font-size: 40%;
-    }
+@include respond(670) {
+  font-size: 40%;
+}
 
-  @include respond(501) {
-    font-size: 26%;
-    }
+@include respond(501) {
+  font-size: 26%;
+}
 
-  @include respond(phone) {
-    font-size: 20%;
-  }
+@include respond(phone) {
+  font-size: 20%;
+}
 
-  @include respond(phoneSlim) {
-    font-size: 27%;
-  }
+@include respond(phoneSlim) {
+  font-size: 27%;
+}
 
-  // @include respond(iPadPro) {
-  //   font-size: 70%;
-  // }
+@include respond(iPadPro) {
+  font-size: 70%;
+}
 
-  // @include respond(iPad) {
-  //   font-size: 55%;
-  // }
-
+@include respond(iPad) {
+  font-size: 55%;
+}
 
 body {
   margin: 0px;
@@ -56,29 +56,25 @@ body {
     height: 310vh;
   }
 
-  @include respond(1025) {
-   
-  }
+  // @include respond(970) {
+  //   background-color: brown;
+  // }
 
   @include respond(770) {
     height: 260vh;
+    width: 116%;
   }
 
   @include respond(670) {
-  height: 235vh;
+    height: 235vh;
+    width: 125%;
   }
 
   @include respond(501) {
     height: 195vh;
-    }
-
-  @include respond(phoneSlim) {
-    height: 150vh;
+    width: 125%;
   }
 
- 
-
-  
   height: 390vh;
   width: 100%;
   margin: 0px;

@@ -4,6 +4,24 @@
   background-color: white;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+ padding-top: 5%;
+}
+
+.hero-name{
+  display:flex;
+  margin: 0% 0vw 0% 30vw; 
+
+  @include respond(1270) {
+    margin: 0% 0vw 0% 20vw; 
+  }
+
+  @include respond(770) {
+    margin: 0% 0vw 0% 10vw; 
+  }
+
+  @include respond(670) {
+    margin: 0% 0vw 0% 20vw; 
+  }
 }
 
 .first-name {
@@ -39,34 +57,43 @@
     left: 15%;
   }
 
-  position: absolute;
-  bottom: 10%;
-  left: 30%;
-  transform: rotate(270deg);
-  transform-origin: 0 0;
+margin-right: 2.5%;
+
 }
 
-.last-name {
-  @include respond(1440) {
-    top: 14%;
-  }
-  @include respond(501) {
-    top: 10%;
-    left: 28%;
-  }
-  @include respond(phoneSlim) {
-    left: 32%;
-    top: 2%;
-  }
+// .last-name {
+//   @include respond(1440) {
+//     top: 14%;
+//   }
+//   @include respond(501) {
+//     top: 10%;
+//     left: 28%;
+//   }
+//   @include respond(phoneSlim) {
+//     left: 32%;
+//     top: 2%;
+//   }
 
-  position: absolute;
-  top: 5%;
-  left: 37%;
-}
+  
+// }
 
 .hero-menu {
   @include respond(1440) {
     top: 29%;
+  }
+
+  @include respond(1270) {
+    top: 29%;
+    left: 40%;
+  }
+
+  @include respond(770) {
+    top: 35%;
+    left: 35%;
+  }
+
+  @include respond(670) {
+    left: 40%;
   }
 
   @include respond(501) {
@@ -80,4 +107,14 @@
   position: absolute;
   top: 20%;
   left: 38%;
+}
+
+.hero-menu-long{
+visibility: hidden;
+
+@include respond(1270) {
+  visibility: visible;
+  display: flex;
+  flex-direction: row;
+   }
 }
