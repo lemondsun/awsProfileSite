@@ -68,10 +68,7 @@ export default function Work() {
       <div class='work-list'>
         <p class="body-header">MY WORK</p>
         <p class='body-link' onClick={() => setSite(shotInFilm)}>SHOT IN FILM</p>
-<<<<<<< HEAD
         <p class='body-link' onClick={() => setSite(churchWebsite)}>CHURCH WEBSITE</p>
-=======
->>>>>>> fd4db24fb43556a011cb4f5a1350d78ad33022b4
         <p class='body-link' onClick={() => setSite(wiseWords)}>WISE - WORDS</p>
         <p class='body-link' onClick={() => setSite(tartine)}>TARTINE</p>
 
