@@ -1,0 +1,43 @@
+.about {
+  height: 20%;
+  background-color: white;
+  margin: $gutter-horizontal $gutter-vertical;
+  padding: 2%;
+  position: relative;
+  z-index: 10;
+
+  &--text {
+    margin-top: 2%;
+    padding: 1.5%; 
+  }
+}
+
+.skills {
+  @include respond(iPad) {
+   margin-top: 2%;
+    }
+    @include respond(phoneSlim) {
+      margin-top: 1%;
+    }
+  display: flex;
+  flex-direction: row;
+margin-top: 5%;
+  &--header {
+    margin-top: 2%;
+  }
+
+  &__list {
+    width: 80%;
+    display: flex;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+    margin-left: 2.5%;
+    height: 100%;
+
+    &--logo {
+      width: 10%;
+      height: 200%;
+      margin: 0% 1.5%;
+    }
+  }
+}

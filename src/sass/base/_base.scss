@@ -1,0 +1,83 @@
+html {
+  // defines what 1rem is.
+  font-size: 61%;
+
+  @include respond(1140) {
+   font-size: 55%;
+  }
+
+  @include respond(1025) {
+    font-size: 50%;
+  }
+
+  @include respond(770) {
+    font-size: 45%;
+  }
+
+  @include respond(670) {
+    font-size: 40%;
+    }
+
+  @include respond(501) {
+    font-size: 26%;
+    }
+
+  @include respond(phone) {
+    font-size: 20%;
+  }
+
+  @include respond(phoneSlim) {
+    font-size: 27%;
+  }
+}
+
+body {
+  margin: 0px;
+}
+
+.App {
+  @include respond(1440) {
+    height: 375vh;
+  }
+
+  @include respond(1270) {
+    height: 350vh;
+  }
+
+  @include respond(1140) {
+    height: 310vh;
+  }
+
+  @include respond(1025) {
+   
+  }
+
+  @include respond(770) {
+    height: 260vh;
+  }
+
+  @include respond(670) {
+  height: 235vh;
+  }
+
+  @include respond(501) {
+    height: 195vh;
+    }
+
+  @include respond(phoneSlim) {
+    height: 150vh;
+  }
+
+ 
+
+  
+  height: 390vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: $primary-pink;
+  background-image: url(".../../images/backgroundShape.svg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}

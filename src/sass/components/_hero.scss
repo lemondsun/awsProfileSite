@@ -1,0 +1,83 @@
+.hero-section {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+}
+
+.first-name {
+  @include respond(1440) {
+    top: 77%;
+  }
+
+  @include respond(1270) {
+    left: 29%;
+    bottom: -9%;
+  }
+  @include respond(1025) {
+    left: 29%;
+    bottom: 0%;
+  }
+
+  @include respond(770) {
+    left: 27%;
+    bottom: -5%;
+  }
+  @include respond(phone) {
+    left: 20%;
+    bottom: 2%;
+  }
+
+  @include respond(phoneSlim) {
+    left: 14%;
+    bottom: -53%;
+  }
+
+  @include respond(501) {
+    top: 212px;
+    left: 15%;
+  }
+
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  transform: rotate(270deg);
+  transform-origin: 0 0;
+}
+
+.last-name {
+  @include respond(1440) {
+    top: 14%;
+  }
+  @include respond(501) {
+    top: 10%;
+    left: 28%;
+  }
+  @include respond(phoneSlim) {
+    left: 32%;
+    top: 2%;
+  }
+
+  position: absolute;
+  top: 5%;
+  left: 37%;
+}
+
+.hero-menu {
+  @include respond(1440) {
+    top: 29%;
+  }
+
+  @include respond(501) {
+    top: 29%;
+    left: 34%;
+  }
+
+  @include respond(phoneSlim) {
+    top: 30%;
+  }
+  position: absolute;
+  top: 20%;
+  left: 38%;
+}
