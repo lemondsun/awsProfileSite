@@ -3,10 +3,8 @@ import React, { useState } from 'react'
 import shotInFilmImg from '../images/shotInFilmImg.png'
 import wiseWordsImg from '../images/wiseWordsImg.png'
 import tartineImg from '../images/tartineImg.png'
-<<<<<<< HEAD
 import churchwebsite from  '../images/church.png'
-=======
->>>>>>> fd4db24fb43556a011cb4f5a1350d78ad33022b4
+
 
 import illustratorLogo from '../images/illustratorLogo.png'
 import reactLogo from '../images/reactLogo.png'
@@ -14,11 +12,7 @@ import rubyOnRails from '../images/rubyOnRails.png'
 import javascriptLogo from '../images/javascriptLogo.png'
 import postgresqlLogo from '../images/postgresqlLogo.png'
 import cssLogo from '../images/cssLogo.png'
-<<<<<<< HEAD
 import sassLogo from '../images/sassLogo.png'
-
-=======
->>>>>>> fd4db24fb43556a011cb4f5a1350d78ad33022b4
 
 
 export default function Work() {
