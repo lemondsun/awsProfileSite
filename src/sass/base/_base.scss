@@ -29,7 +29,15 @@ html {
   @include respond(phoneSlim) {
     font-size: 27%;
   }
-}
+
+  // @include respond(iPadPro) {
+  //   font-size: 70%;
+  // }
+
+  // @include respond(iPad) {
+  //   font-size: 55%;
+  // }
+
 
 body {
   margin: 0px;
