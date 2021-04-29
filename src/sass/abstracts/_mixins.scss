@@ -21,6 +21,13 @@ $breakpoint argument choices:
     }
   }
 
+  @if $breakpoint == 401 {
+    @media only screen and (max-width: 401px) 
+    {
+      @content;
+    }
+  }
+
   @if $breakpoint == 501 {
     @media only screen and (max-width: 501px) 
     {

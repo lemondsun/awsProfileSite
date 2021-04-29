@@ -60,7 +60,6 @@ body {
     height: 260vh;
     width: 116%;
   }
-
   @include respond(670) {
     height: 235vh;
     width: 125%;
@@ -69,6 +68,11 @@ body {
   @include respond(501) {
     height: 240vh;
     width: 145%;
+  }
+
+  @include respond(401) {
+    height: 235vh;
+    width: 160%;
   }
 
   height: 390vh;

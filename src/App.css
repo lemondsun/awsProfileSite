@@ -70,6 +70,10 @@ body {
     .App {
       height: 240vh;
       width: 145%; } }
+  @media only screen and (max-width: 401px) {
+    .App {
+      height: 235vh;
+      width: 160%; } }
 
 .heading-primary {
   font-family: "Oswald", sans-serif;
@@ -81,6 +85,9 @@ body {
   @media only screen and (max-width: 670px) {
     .heading-primary {
       font-size: 8rem; } }
+  @media only screen and (max-width: 401px) {
+    .heading-primary {
+      font-size: 7rem; } }
 
 .heading-secondary {
   font-family: "Oswald", sans-serif;
@@ -99,6 +106,9 @@ body {
   @media only screen and (max-width: 670px) {
     .heading-secondary {
       font-size: 3rem; } }
+  @media only screen and (max-width: 401px) {
+    .heading-secondary {
+      font-size: 4rem; } }
 
 .menu-header {
   font-family: "Oswald", sans-serif;
@@ -221,6 +231,10 @@ body {
     .hero-menu {
       top: 35%;
       left: 38%; } }
+  @media only screen and (max-width: 401px) {
+    .hero-menu {
+      top: 35%;
+      left: 34%; } }
 
 .hero-menu-long {
   visibility: hidden; }

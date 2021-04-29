@@ -9,6 +9,12 @@
   @include respond(670) {
     font-size: 8rem;
   }
+
+  @include respond(401) {
+    font-size: 7rem;
+
+  }
+
 }
 
 .heading-secondary {
@@ -22,6 +28,10 @@
 
   @include respond(670) {
     font-size: 3rem;
+  }
+
+  @include respond(401) {
+    font-size: 4rem;
   }
 
   font-family: "Oswald", sans-serif;
