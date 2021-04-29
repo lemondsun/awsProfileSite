@@ -23,7 +23,7 @@
   @include respond(670) {
     font-size: 3rem;
   }
- 
+
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: $link-red;
@@ -52,22 +52,14 @@
 }
 
 .button-link {
-
   @include respond(770) {
     font-size: 1rem;
   }
 
-  @include respond(phone) {
-    font-size: 2rem;
-
-  }
-  @include respond(phoneSlim) {
-    font-size: 1.5rem;
-  }
   font-family: "Oswald", sans-serif;
   font-size: 2.5rem;
   color: $link-red;
-  line-height: .1rem;
+  line-height: 0.1rem;
   margin: 1%;
 }
 
@@ -75,8 +67,8 @@
   @include respond(770) {
     font-size: 4.5rem;
   }
-  @include respond(phoneSlim) {
-    line-height: 3rem;
+  @include respond(501) {
+    font-size: 3.5rem;
   }
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -87,7 +79,6 @@
 }
 
 .body-text {
-
   @include respond(770) {
     font-size: 2.5rem;
   }
@@ -95,7 +86,7 @@
   @include respond(670) {
     font-size: 2rem;
   }
-  
+
   font-family: "Merriweather", serif;
   font-weight: 300;
   color: black;

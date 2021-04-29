@@ -68,8 +68,8 @@ body {
       width: 125%; } }
   @media only screen and (max-width: 501px) {
     .App {
-      height: 195vh;
-      width: 125%; } }
+      height: 240vh;
+      width: 145%; } }
 
 .heading-primary {
   font-family: "Oswald", sans-serif;
@@ -119,14 +119,11 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 2.5rem;
   color: #8b443a;
-  line-height: .1rem;
+  line-height: 0.1rem;
   margin: 1%; }
   @media only screen and (max-width: 770px) {
     .button-link {
       font-size: 1rem; } }
-  @media only screen and (max-width: 25em) {
-    .button-link {
-      font-size: 1.5rem; } }
 
 .body-header {
   font-family: "Oswald", sans-serif;
@@ -138,9 +135,9 @@ body {
   @media only screen and (max-width: 770px) {
     .body-header {
       font-size: 4.5rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 501px) {
     .body-header {
-      line-height: 3rem; } }
+      font-size: 3.5rem; } }
 
 .body-text {
   font-family: "Merriweather", serif;
@@ -163,6 +160,9 @@ body {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
   padding-top: 5%; }
+  @media only screen and (max-width: 501px) {
+    .hero-section {
+      height: 25%; } }
 
 .hero-name {
   display: flex;
@@ -194,10 +194,6 @@ body {
     .first-name {
       left: 27%;
       bottom: -5%; } }
-  @media only screen and (max-width: 25em) {
-    .first-name {
-      left: 14%;
-      bottom: -53%; } }
   @media only screen and (max-width: 501px) {
     .first-name {
       top: 212px;
@@ -223,11 +219,8 @@ body {
       left: 40%; } }
   @media only screen and (max-width: 501px) {
     .hero-menu {
-      top: 29%;
-      left: 34%; } }
-  @media only screen and (max-width: 25em) {
-    .hero-menu {
-      top: 30%; } }
+      top: 35%;
+      left: 38%; } }
 
 .hero-menu-long {
   visibility: hidden; }

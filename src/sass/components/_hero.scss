@@ -5,6 +5,10 @@
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
  padding-top: 5%;
+
+ @include respond(501) {
+  height: 25%;
+ }
 }
 
 .hero-name{
@@ -41,15 +45,6 @@
   @include respond(770) {
     left: 27%;
     bottom: -5%;
-  }
-  @include respond(phone) {
-    left: 20%;
-    bottom: 2%;
-  }
-
-  @include respond(phoneSlim) {
-    left: 14%;
-    bottom: -53%;
   }
 
   @include respond(501) {
@@ -97,13 +92,10 @@ margin-right: 2.5%;
   }
 
   @include respond(501) {
-    top: 29%;
-    left: 34%;
+    top: 35%;
+    left: 38%;
   }
 
-  @include respond(phoneSlim) {
-    top: 30%;
-  }
   position: absolute;
   top: 20%;
   left: 38%;

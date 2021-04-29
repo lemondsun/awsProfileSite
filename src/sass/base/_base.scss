@@ -56,10 +56,6 @@ body {
     height: 310vh;
   }
 
-  // @include respond(970) {
-  //   background-color: brown;
-  // }
-
   @include respond(770) {
     height: 260vh;
     width: 116%;
@@ -71,8 +67,8 @@ body {
   }
 
   @include respond(501) {
-    height: 195vh;
-    width: 125%;
+    height: 240vh;
+    width: 145%;
   }
 
   height: 390vh;
